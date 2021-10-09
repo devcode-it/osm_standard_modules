@@ -1,0 +1,56 @@
+{
+    "name": "openstamanager/standard_modules",
+    "description": "Standard modules for OpenSTAManager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maicol Battistini",
+            "email": "maicolbattistini@live.it"
+        }
+    ],
+    "require": {
+        "devcode-it/openstamanager": "@dev",
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symplify/monorepo-builder": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Openstamanager\\TipiAttivita\\": "packages/attivita.tipi/src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../osm_rewrite",
+            "symlink": true
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dasc3er/openstamanager"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Openstamanager\\TipiAttivita\\TipiAttivitaServiceProvider"
+            ],
+            "aliases": {
+                "Openstamanager": "Openstamanager\\TipiAttivita\\TipiAttivitaFacade"
+            }
+        },
+        "osm-modules": {
+            "attivita.tipi": {
+                "icon": "format-list-bulleted-type",
+                "parent-module": "openstamanager/attivita"
+            }
+        }
+    },
+    "replace": {
+        "openstamanager/attivita.tipi": "self.version"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

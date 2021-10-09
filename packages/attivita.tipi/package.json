@@ -1,0 +1,10 @@
+{
+  "name": "attivita.tipi",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build",
+    "build-watch": "vite build --watch"
+  },
+  "dependencies": {
+  }
+}
