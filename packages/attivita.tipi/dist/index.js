@@ -10,6 +10,60 @@ class TipoAttivita extends Model {
     super(...arguments);
     __publicField(this, "jsonApiType", "attivita/tipi");
   }
+  get codice() {
+    return this.getAttribute("codice");
+  }
+  set codice(codice) {
+    this.setAttribute("codice", codice);
+  }
+  get descrizione() {
+    return this.getAttribute("descrizione");
+  }
+  set descrizione(descrizione) {
+    this.setAttribute("descrizione", descrizione);
+  }
+  get addebitoOrario() {
+    return this.getAttribute("addebito_orario");
+  }
+  set addebitoOrario(addebitoOrario) {
+    this.setAttribute("addebito_orario", addebitoOrario);
+  }
+  get addebitoKm() {
+    return this.getAttribute("addebito_km");
+  }
+  set addebitoKm(addebitoKm) {
+    this.setAttribute("addebito_km", addebitoKm);
+  }
+  get addebitoDirittoChiamata() {
+    return this.getAttribute("addebito_diritto_chiamata");
+  }
+  set addebitoDirittoChiamata(addebitoDirittoChiamata) {
+    this.setAttribute("addebito_diritto_chiamata", addebitoDirittoChiamata);
+  }
+  get costoOrarioTecnico() {
+    return this.getAttribute("costo_orario_tecnico");
+  }
+  set costoOrarioTecnico(costoOrarioTecnico) {
+    this.setAttribute("costo_orario_tecnico", costoOrarioTecnico);
+  }
+  get costoKmTecnico() {
+    return this.getAttribute("costo_km_tecnico");
+  }
+  set costoKmTecnico(costoKmTecnico) {
+    this.setAttribute("costo_km_tecnico", costoKmTecnico);
+  }
+  get costoDirittoChiamataTecnico() {
+    return this.getAttribute("costo_diritto_chiamata_tecnico");
+  }
+  set costoDirittoChiamataTecnico(costoDirittoChiamataTecnico) {
+    this.setAttribute("costo_diritto_chiamata_tecnico", costoDirittoChiamataTecnico);
+  }
+  get tempoStandard() {
+    return this.getAttribute("tempo_standard");
+  }
+  set tempoStandard(tempoStandard) {
+    this.setAttribute("tempo_standard", tempoStandard);
+  }
 }
 var __defProp2 = Object.defineProperty;
 var __defNormalProp2 = (obj, key, value) => key in obj ? __defProp2(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
