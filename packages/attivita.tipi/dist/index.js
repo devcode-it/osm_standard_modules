@@ -4,7 +4,7 @@ var __publicField = (obj, key, value) => {
   __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
   return value;
 };
-import { Model, RecordsPage } from "openstamanager";
+import { Model, RecordsPage } from "../../../index.js";
 class TipoAttivita extends Model {
   constructor() {
     super(...arguments);
