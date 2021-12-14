@@ -42,7 +42,7 @@
                 "Openstamanager": "Openstamanager\\TipiAttivita\\TipiAttivitaFacade"
             }
         },
-        "osm-modules": {
+        "osm_modules": {
             "attivita.tipi": {
                 "icon": "format-list-bulleted-type",
                 "parent-module": "openstamanager/attivita"
