@@ -1,5 +1,6 @@
 {
     "name": "openstamanager/standard_modules",
+    "type": "openstamanager-module",
     "description": "Standard modules for OpenSTAManager",
     "license": "MIT",
     "authors": [
