@@ -1,9 +1,7 @@
 {
   "name": "@openstamanager/standard-modules",
   "version": "1.0.0",
-  "dependencies": {
-    "openstamanager": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@adeira/babel-preset-adeira": "^4.0.0",
     "@adeira/eslint-config": "^6.8.0",
