@@ -2,5 +2,9 @@
 <project version="4">
   <component name="LaravelIdeaMainSettings">
     <option name="frameworkFound" value="true" />
+    <option name="langDirectory" value="packages/anagrafiche/resources/lang" />
+    <option name="moduleSystemName" value="package" />
+    <option name="packageLangNamespace" value="anagrafiche" />
+    <option name="packageModuleAppPath" value="packages/anagrafiche/src" />
   </component>
 </project>

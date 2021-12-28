@@ -1,6 +1,6 @@
 {
     "name": "openstamanager/standard_modules",
-    "type": "openstamanager-module",
+    "type": "metapackage",
     "description": "Standard modules for OpenSTAManager",
     "license": "MIT",
     "authors": [
@@ -10,47 +10,27 @@
         }
     ],
     "require": {
-        "devcode-it/openstamanager": "dev-rewrite|@dev",
+        "devcode-it/openstamanager": "dev-3.x",
+        "openstamanager/attivita.tipi": "@dev",
+        "openstamanager/anagrafiche": "@dev",
         "php": ">=8.0"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-latest",
-        "symplify/monorepo-builder": "^9"
-    },
-    "autoload": {
-        "psr-4": {
-            "Openstamanager\\TipiAttivita\\": "packages/attivita.tipi/src/"
-        }
+        "roave/security-advisories": "dev-latest"
     },
     "repositories": [
         {
-            "type": "path",
-            "url": "../osm_rewrite",
-            "symlink": true
+            "type": "vcs",
+            "url": "https://github.com/devcode-it/osm_module_attivita_tipi"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/Dasc3er/openstamanager"
+            "url": "https://github.com/devcode-it/osm_module_anagrafiche"
         }
     ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Openstamanager\\TipiAttivita\\TipiAttivitaServiceProvider"
-            ],
-            "aliases": {
-                "Openstamanager": "Openstamanager\\TipiAttivita\\TipiAttivitaFacade"
-            }
-        },
-        "osm_modules": {
-            "attivita.tipi": {
-                "icon": "format-list-bulleted-type",
-                "parent-module": "openstamanager/attivita"
-            }
-        }
-    },
     "replace": {
-        "openstamanager/attivita.tipi": "self.version"
+        "openstamanager/attivita.tipi": "*",
+        "openstamanager/anagrafiche": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
